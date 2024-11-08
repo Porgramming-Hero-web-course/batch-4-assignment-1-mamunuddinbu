@@ -14,7 +14,7 @@ type Shape = Circle | Rectangle;
 function calculateShapeArea(shape: Shape): number {
     if (shape.shape === "circle") {
         // Calculate area for circle: π * radius^2
-        return Math.PI * shape.radius ** 2;
+        return Math.PI * shape.radius * shape.radius;
     } else if (shape.shape === "rectangle") {
         // Calculate area for rectangle: width * height
         return shape.width * shape.height;

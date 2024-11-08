@@ -1,10 +1,7 @@
 {
     class Car {
-        make: string;
-        model: string;
-        year: number;
-    
-        constructor(make: string, model: string, year: number) {
+
+        constructor(public make: string,public model: string,public year: number) {
             this.make = make;
             this.model = model;
             this.year = year;
@@ -18,6 +15,6 @@
     
     // Sample Input
     const car = new Car("Honda", "Civic", 2018);
-    console.log(car.getCarAge()); // Output: 6 (assuming the current year is 2024)
+    console.log(car.getCarAge()); 
     
 }
