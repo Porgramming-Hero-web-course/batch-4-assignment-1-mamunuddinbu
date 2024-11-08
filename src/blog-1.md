@@ -9,7 +9,7 @@ In TypeScript, Type Guards help us figure out what type a variable is during run
 Different Types of Type Guards and Their Use Cases
 
 
-# 1. typeof Type Guard#
+### 1. typeof Type Guard#
 The typeof Type Guard is one of the simplest and most common. It’s used to check for primitive types like string, number, boolean, and symbol.
 
 Use Case: When you have a union of basic types and need to perform specific operations based on the type.
@@ -25,7 +25,7 @@ function formatInput(input: string | number): string {
 }
 In this example, typeof input lets TypeScript know if input is a string or a number, so we can safely call .toUpperCase() or .toFixed() without errors.
 
-# 2. instanceof Type Guard
+### 2. instanceof Type Guard
 The instanceof Type Guard checks if an object is an instance of a particular class. This is useful when working with custom classes.
 
 Use Case: When you have multiple classes or objects and want to handle them based on their specific class type.
@@ -53,7 +53,7 @@ function makeSound(animal: Dog | Cat) {
 }
 In this example, instanceof allows us to call bark or meow only if animal is of the right class type.
 
-# 3. Custom Type Guard Functions (User-Defined Type Guards)
+### 3. Custom Type Guard Functions (User-Defined Type Guards)
 Custom Type Guards are functions that we write to perform more complex checks. They return a boolean, and TypeScript recognizes them as a way to confirm a specific type.
 
 Use Case: When the logic for determining a type is complex and typeof or instanceof won’t work.
@@ -76,7 +76,7 @@ function handlePet(pet: Fish | Bird) {
 }
 Here, isFish is a custom Type Guard function. By checking if swim is defined, it lets TypeScript understand that pet is a Fish, so we can safely call swim().
 
-# 4. in Operator Type Guard
+### 4. in Operator Type Guard
 The in Type Guard checks if an object has a specific property. It’s helpful for objects with different properties.
 
 Use Case: When you’re dealing with objects that may have different properties but aren’t instances of specific classes.
