@@ -1,6 +1,6 @@
 
 
-Why Are Type Guards Necessary?
+# Why Are Type Guards Necessary?
 
 
 In TypeScript, Type Guards help us figure out what type a variable is during runtime. Since TypeScript is a superset of JavaScript, sometimes we don’t know the type of a variable until the code runs, especially when working with union types . Type Guards help by narrowing down these types so TypeScript knows how to handle them.
@@ -10,6 +10,7 @@ Different Types of Type Guards and Their Use Cases
 
 
 ### 1. typeof Type Guard#
+
 The typeof Type Guard is one of the simplest and most common. It’s used to check for primitive types like string, number, boolean, and symbol.
 
 Use Case: When you have a union of basic types and need to perform specific operations based on the type.
